@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--faccio il menu con un height fisso e infinito-->
+<div class="sinistra">
+   
+  <div class="dropdown">
+  <button class="dropbtn">menu</button>
+      <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="biografia.html">Biografia</a>
+          <a href="contatta.html">Contatta</a>
+          <a href="negozio.html">Negozio</a>
+      </div>
+  </div>
+        <div class="fixedfirma">
+          <img src="firma-mamma.png" alt="">
+          </div>
+          <div class="carrello"><img src="carrello.svg" alt=""></div>
+
+<!--faccio il login-->
+                    
+                
+                        <div class="fixed">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="butlog1" style="width:center;left: 30px;">Login</button>
+                    </div>
+                        <div id="id01" class="modal">
+                        
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container"><br>
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                            <button type="submit" class="butlog">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Ricordami
+                            </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"class="cancelbtn">Cancel</button>
+                            <span class="psw"><a href="#">Password dimenticata?</a></span>
+                            </div>
+                        </form>
+                        </div>
+
+                        <script>
+                        // richiamo l'effetto
+                        var modal = document.getElementById('id01');
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>
+
+
+
+
+
+<!--registrazione-->
+<div class="fixed2">
+<button onclick="document.getElementById('id02').style.display='block'"class="butreg">Registrati</button>
+</div>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Registrazione</h1><br><br>
+      <p>Sono obbligatori tutti i campi.</p>
+      <hr><br><br>
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Inserisci" name="name" required><br><br>
+
+      <label for="cognome"><b>Cognome</b></label>
+      <input type="text" placeholder="Inserisci cognome" name="cognome" required><br><br>
+
+      <label for="indirizzo"><b>Indirizzo</b></label>
+      <input type="text" placeholder="Inserisci indirizzo" name="indirizzo" required><br><br>
+
+      <label for="citta"><b>Citta</b></label>
+      <input type="text" placeholder="Inserisci citta" name="citta" required><br><br>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Inserisci Username" name="username" required><br><br>
+
+      <label for="username"><b>E-mail</b></label>
+      <input type="text" placeholder="Inserisci email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ricordami
+      </label><br>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="butreg2">Registrati</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    // richiamo l'effetto
+    var modal = document.getElementById('id02');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</div>          
+</div>
+<div class="fixedneg">
+<h2 style="text-align:center">Product Card</h2>
+
+<div class="card">
+  <img src="dipinti/bisticcio.jpg" alt="Denim Jeans" style="width:100%">
+  <button>Acquista</button><br>
+  <h1>Bisticcio</h1><br>
+  <p class="price">€1000</p><br>
+  <p></p><br>
+  <p></p><br>
+</div>
+
+<div class="card">
+    <img src="dipinti/Alla ricerca del conoscere.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>Alla ricerca del conoscere</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+  </div>
+
+  <div class="card">
+    <img src="dipinti/Evoluzione.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>Evoluzione</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+  </div>
+
+  <div class="card">
+    <img src="dipinti/Germogli.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>Germogli</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+  </div>
+
+  <div class="card">
+    <img src="dipinti/I bari (copia d'arte).jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>I Bari</h1><br>
+    <p class="price">€1000</p><br>
+    <p>Copia d'arte</p><br>
+    
+  </div>
+
+  <div class="card">
+    <img src="dipinti/L'uomo e il mondo.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>L'uomo e il mondo</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+    
+  </div>
+
+  <div class="card">
+    <img src="dipinti/La Madonna(copia d'arte).jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>La madonna</h1><br>
+    <p class="price">€1000</p><br>
+    <p>Copia d'arte</p><br>
+    
+  </div>
+
+  <div class="card">
+    <img src="dipinti/La ribellione degli elementi.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>La ribelione degli elementi</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+    
+  </div>
+
+  <div class="card">
+    <img src="dipinti/La scala.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>La scala</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+    
+  </div>
+
+  <div class="card">
+    <img src="dipinti/maria e Maddalena(copia).jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>Maria e Maddalena</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+    
+  </div>
+
+  <div class="card">
+    <img src="dipinti/metamorfosi.jpg" alt="Denim Jeans" style="width:100%">
+    <p><button>Acquista</button></p><br>
+    <h1>La metamorfosi</h1><br>
+    <p class="price">€1000</p><br>
+    <p></p><br>
+    
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

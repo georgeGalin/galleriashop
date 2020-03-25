@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--faccio il menu con un height fisso e infinito-->
+<div class="sinistra">
+   
+        <div class="dropdown">
+        <button class="dropbtn">menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="biografia.html">Biografia</a>
+                <a href="contatta.html">Contatta</a>
+                <a href="negozio.html">Negozio</a>
+            </div>
+        </div>
+
+        <div class="fixedfirma">
+          <img src="firma-mamma.png" alt="">
+          </div>
+          <div class="carrello"><img src="carrello.svg" alt=""></div>
+
+          
+          
+
+<!--faccio il login-->
+                    
+                
+                        <div class="fixed">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="butlog1" style="width:center;left: 30px;">Login</button>
+                    </div>
+                        <div id="id01" class="modal">
+                        
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container"><br>
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                            <button type="submit" class="butlog">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Ricordami
+                            </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"class="cancelbtn">Cancel</button>
+                            <span class="psw"><a href="#">Password dimenticata?</a></span>
+                            </div>
+                        </form>
+                        </div>
+
+                        <script>
+                        // richiamo l'effetto
+                        var modal = document.getElementById('id01');
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>
+
+
+
+
+
+<!--registrazione-->
+<div class="fixed2">
+<button onclick="document.getElementById('id02').style.display='block'"class="butreg">Registrati</button>
+</div>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Registrazione</h1><br><br>
+      <p>Sono obbligatori tutti i campi.</p>
+      <hr><br><br>
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Inserisci" name="name" required><br><br>
+
+      <label for="cognome"><b>Cognome</b></label>
+      <input type="text" placeholder="Inserisci cognome" name="cognome" required><br><br>
+
+      <label for="indirizzo"><b>Indirizzo</b></label>
+      <input type="text" placeholder="Inserisci indirizzo" name="indirizzo" required><br><br>
+
+      <label for="citta"><b>Citta</b></label>
+      <input type="text" placeholder="Inserisci citta" name="citta" required><br><br>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Inserisci Username" name="username" required><br><br>
+
+      <label for="username"><b>E-mail</b></label>
+      <input type="text" placeholder="Inserisci email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ricordami
+      </label><br>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="butreg2">Registrati</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    // richiamo l'effetto
+    var modal = document.getElementById('id02');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</div>  
+
+
+<div class="fixedbio">
+  <h3>     Biografia</h3><br><br><br><br>
+  <p style="min-width: 200px;width: 800px; line-height: 40px;"> Liliana Gilea nasce a Ruginesti, in Romania, nel 1968.
+  Gli anni dell’infanzia di Liliana sono storicamente anni difficilissimi: si tratta del periodo della
+  
+  dittatura comunista di Ceausecu, che mette a durissima prova la popolazione rumena sot-
+  toposta a un tenore di vita misero, fatto di fame e miseria. Nel 1986 Liliana si diploma con
+  
+  eccellenti risultati presso il liceo scientifico di Adjud. Negli anni delle scuole superiori ha
+  modo di frequentare un corso di disegno, che sa fornirle degli strumenti di base che prima o
+  poi le torneranno utili. Nel 1989 avviene la grande frattura. Il muro di Berlino cade e i regimi
+  totalitari dell’Est Europa crollano rapidamente in seguito a violente ribellioni che volevano
+  deporre quei tiranni che, con il benestare dell’Unione Sovietica, avevano sfruttato per anni la
+  
+  popolazione. Anche dopo la caduta della dittatura, la situazione in Romania continua a es-
+  sere molto difficile e Gilea decide dunque di lasciare il proprio Paese per cercare fortuna in
+  
+  Italia, approdando, dopo varie vicissitudini, nella bergamasca. Qui trova lavoro presso l’a-
+  zienda Lediberg, specializzata nella grafica editoriale. Per vent’anni le passano fra le mani
+  
+  centinaia di volumi d’arte e cataloghi che non fanno altro che avvicinarla sempre di più alla
+  pittura e al mondo dell’arte. Colpita da tutta quella bellezza, Gilea decide di trasporre sulla
+  
+  tela le proprie emozioni e le proprie idee. I maestri del passato restano un suo punto di rife-
+  rimento, però il suo sguardo è orientato in modo particolare sui problemi della contempora-
+  neità e della situazione dell’essere umano in quanto tale.
+  
+  Nel maggio del 2017 si tiene presso l’azienda agricola Il Castelletto la sua prima mostra
+  monografica.
+
+</p>
+
+</div>
+</div>
+
+
+
+
+</body>
+</html>

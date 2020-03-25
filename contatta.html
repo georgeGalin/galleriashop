@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--faccio il menu con un height fisso e infinito-->
+<div class="sinistra">
+   
+        <div class="dropdown">
+        <button class="dropbtn">menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="biografia.html">Biografia</a>
+                <a href="contatta.html">Contatta</a>
+                <a href="negozio.html">Negozio</a>
+            </div>
+        </div>
+
+        <div class="fixedfirma">
+          <img src="firma-mamma.png" alt="">
+          </div>
+          <div class="carrello"><img src="carrello.svg" alt=""></div>
+
+<!--faccio il login-->
+                    
+                
+                        <div class="fixed">
+                        <button onclick="document.getElementById('id01').style.display='block'" class="butlog1" style="width:center;left: 30px;">Login</button>
+                    </div>
+                        <div id="id01" class="modal">
+                        
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container"><br>
+                            <label for="uname"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                            <button type="submit" class="butlog">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Ricordami
+                            </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"class="cancelbtn">Cancel</button>
+                            <span class="psw"><a href="#">Password dimenticata?</a></span>
+                            </div>
+                        </form>
+                        </div>
+
+                        <script>
+                        // richiamo l'effetto
+                        var modal = document.getElementById('id01');
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>
+
+
+
+
+
+<!--registrazione-->
+<div class="fixed2">
+<button onclick="document.getElementById('id02').style.display='block'"class="butreg">Registrati</button>
+</div>
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Registrazione</h1><br><br>
+      <p>Sono obbligatori tutti i campi.</p>
+      <hr><br><br>
+
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Inserisci" name="name" required><br><br>
+
+      <label for="cognome"><b>Cognome</b></label>
+      <input type="text" placeholder="Inserisci cognome" name="cognome" required><br><br>
+
+      <label for="indirizzo"><b>Indirizzo</b></label>
+      <input type="text" placeholder="Inserisci indirizzo" name="indirizzo" required><br><br>
+
+      <label for="citta"><b>Citta</b></label>
+      <input type="text" placeholder="Inserisci citta" name="citta" required><br><br>
+
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Inserisci Username" name="username" required><br><br>
+
+      <label for="username"><b>E-mail</b></label>
+      <input type="text" placeholder="Inserisci email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Inserisci Password" name="psw" required><br><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Ripeti Password" name="psw-repeat" required><br><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Ricordami
+      </label><br>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="butreg2">Registrati</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    // richiamo l'effetto
+    var modal = document.getElementById('id02');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</div>   
+<!--<div class="fixedcomm">-->       
+</div>
+
+<h3>Contatta L'Artista</h3>
+<div class="fixedcomm">
+<div class="containercomm">
+  <form action="contattaci.php" method="post">
+    <label for="fname">Nome</label>
+    <input type="text" id="fname" name="name" placeholder="il tuo nome">
+
+    <label for="lname">Cognome</label>
+    <input type="text" id="lname" name="surname" placeholder="il tuo cognome">
+
+      <label for="email">E-mail</label>
+    <input type="text" id="email" name="email" placeholder="la tua mail">
+      
+
+    <label for="subject">Messaggio</label>
+    <textarea id="subject" name="subject" placeholder="Scrivi qualcosa.." style="height:200px"></textarea>
+
+    <input type="submit" value="Invia">
+  </form>
+  
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>
