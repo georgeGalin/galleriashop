@@ -13,7 +13,7 @@ $email = htmlspecialchars($_POST[‘email’]);
 $messaggio = htmlspecialchars($_POST[‘messaggio’]);
 
 
- 
+
 $to = 'gege.gilea@gmail.com';
 $subject = 'Messaggio da $username';
 $email = “”;
