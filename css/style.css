@@ -1,0 +1,490 @@
+/*** Menu***/
+.sinistra{
+
+  position: absolute;
+  min-height: 100% !important;
+  width: 69px;
+}
+* { padding: 0; margin: 0; }
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+
+}
+
+
+.dropbtn {
+    background-color: #8B0000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 4px 18px 0px #8B0000;
+    position: fixed;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8B0000;
+    min-width: 60px;
+    box-shadow: 0px 4px 18px 0px #8B0000;
+    z-index: 1;
+
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: rgb(243, 95, 95);}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #8d0404b6;}
+
+
+
+
+  .fixedfirma{
+    position: fixed;
+    bottom: 35%;
+    border: none;
+    left: 10px;
+  }
+
+
+/*** css login ***/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.butlog {
+  background-color: #8B0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0px 4px 18px 0px #751801;
+
+}
+
+.butlog:hover {
+  opacity: 0.8;
+}
+.butreg{
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  width: 69px;
+
+}
+.butreg2{
+  background-color: #8B0000;
+  color: white;
+  padding: 10px 8px;
+  border: none;
+  width: 69px;
+
+}
+
+
+div.fixed {
+  position: fixed;
+  z-index: 9999;
+  bottom: 40px;
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  box-shadow: 0px 4px 18px 0px #8B0000;
+
+  }
+  div.fixed2 {
+    position: fixed;
+    z-index: 9999;
+    bottom: 8px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 18px 0px #8B0000;
+
+    }
+  .butlog1 {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    width: 69px;
+  }
+
+
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border: none;
+}
+
+
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+.container {
+  padding: 16px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+.close {
+  position: absolute;
+  right: 150px;
+  top: 130px;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*** fine css login-reg ***/
+
+/*** Galleria/slide dei dipinti ***/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;background:#FFEBCD;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  top: 65px;
+  left: 70px;
+  max-width: 630px;
+  position: relative;
+  margin: auto;
+
+}
+.fixedimg{
+  position: relative;
+  left: 70px;
+  top: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*** Commento Slide ***/
+.containercomm {
+  border-radius: 5px;
+  background-color: #222121d5;
+  padding: 20px;
+  color: white;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.imgcarrello{
+  position: fixed;
+  right: 20px;
+  border: 0;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+}
+.imgadmin{
+  position: fixed;
+  right: 30px;
+  border: 0;
+  top: 70px;
+  width: 30px;
+  height: 30px;
+  
+}
+
+input[type=submit] {
+  background-color: #f00707b6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f00707b6;
+}
+.fixedcomm{
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  top: 50px;
+}
+
+.benvenuto{
+  position: fixed;
+  bottom: 5%;
+  left: 0px;
+  color: green;
+  font-size:8pt;
+  /*font-weight: bold;*/
+}
+.logout{
+  position: fixed;
+  bottom: 3%;
+  left: 3px;
+  color: green;
+  font-size:8pt;
+}
+/*** Biografia ***/
+.fixedbio{
+  position: absolute;
+  left: 100px;
+  top: 40px;
+  width: 100%;
+  color: black;
+  height: 200;
+}
+/*** Contatta ***/
+
+.containercomm {
+  border-radius: 5px;
+  background-color: #8B7B8B;
+  padding: 20px;
+  color: white;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f00707b6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f00707b6;
+}
+.fixedcomm{
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  top: 50px;
+}
+
+/*** Negozio ***/
+
+.card {/*descrizione e nome quadro*/
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  color: white;
+  font-size: 10px;
+
+}
+
+.price {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #f00707b6;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.fixedneg{
+  position: relative;
+  left: 100px;
+  right: 100px;
+  top: 30px;
+
+}
+.btnCarrelloRimuovi{
+
+background-color: red;
+
+}
+.btnCarrelloCancella{
+  background-color: #f00707b6;
+}

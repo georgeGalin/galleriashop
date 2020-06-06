@@ -1,0 +1,5 @@
+michele@personal.example.com     password: ciaociao
+
+sb-jfp4r1869280@personal.example.com    password : be)p1I1J
+
+token di pagamento : LZJDTMLirWJXIkN5RrOrcqoQ05VF-Zca_cNFIBUTsgeCPZ3YeOThg72A4QS

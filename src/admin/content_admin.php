@@ -1,0 +1,10 @@
+<div class="row">
+                    <div class="col-xl-10 col-lg-10 m-auto">
+<p class="lead">Qui puoi amministrare gli elementi del negozio.<br>
+Puoi creare nuovi prodotti, cancellare o modificare quelli già esistenti.<br>
+Puoi mostrare in tabella tutti i prodotti.<br>
+Puoi raccogliere da paypal gli ordini e i rapporti delle transazioni.<br>
+Buon lavoro!
+</p>
+                    </div>
+                </div>
